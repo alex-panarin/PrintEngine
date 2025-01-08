@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <IsPackable>false</IsPackable>
+    <NeutralLanguage>en</NeutralLanguage>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="TestModels\**" />
+    <EmbeddedResource Remove="TestModels\**" />
+    <None Remove="TestModels\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="AisRsaDenyDeveloperTests.cs" />
+    <Compile Remove="AppEarlyTerminationDeveloperTests.cs" />
+    <Compile Remove="ApplicationForEarlyTerminationDeveloperTests.cs" />
+    <Compile Remove="BsoOsagoDeveloperTests.cs" />
+    <Compile Remove="EOsago78050InformationDeveloperTests.cs" />
+    <Compile Remove="Resource.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Resource.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="NUnit" Version="4.2.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.6.0" />
+    <PackageReference Include="NUnit.Analyzers" Version="4.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="6.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="NUnitLite" Version="4.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PrintEngine.Templates\PrintEngine.Templates.csproj" />
+  </ItemGroup>
+
+</Project>

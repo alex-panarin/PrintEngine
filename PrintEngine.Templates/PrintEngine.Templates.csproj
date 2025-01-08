@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="itext" Version="8.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PrintEngine.Core\PrintEngine.Core.csproj" />
+    <ProjectReference Include="..\PrintEngine.Metadata\PrintEngine.Metadata.csproj" />
+    <ProjectReference Include="..\PrintEngine.Resources\PrintEngine.Resources.csproj" />
+    <ProjectReference Include="..\PrintEngine.Core\PrintEngine.Core.csproj" />
+    <ProjectReference Include="..\PrintEngine.Metadata\PrintEngine.Metadata.csproj" />
+    <ProjectReference Include="..\PrintEngine.Resources\PrintEngine.Resources.csproj" />
+  </ItemGroup>
+
+</Project>

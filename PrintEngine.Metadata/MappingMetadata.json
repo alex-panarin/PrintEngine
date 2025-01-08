@@ -1,0 +1,42 @@
+{
+	"Mappings": [
+		{ "EOSAGOPOLICY": "OSAGOPOLICY" }
+		
+	],
+	"Values": {
+			"OSAGOPOLICY": {
+				"DocType": "DocType",
+				"ContractConclusionDate": "ContractConclusionDate",
+				"ContractDate": "ContractDate",
+				"ContractEnd": "ContractEnd",
+				"ContractStart": "ContractStart",
+				"CurrentDocumentNumber": "CurrentDocumentNumber",
+				"CurrentDocumentSeries": "CurrentDocumentSeries",
+				"HasTrailer": "HasTrailer",
+				"InsurancePremium": "InsurancePremium",
+				"Insurant": "Insurant",
+				"Insurer": "Insurer",
+				"IsAnyone": "IsAnyone",
+				"IsEaRsa": "IsEaRsa",
+				"AdmitDrivers": "AdmitDrivers",
+				"Coefficients": "Coefficients",
+				"Purpose": "Purpose",
+				"Periods": "Periods",
+				"QRCode": "QRCode",
+				"QRCodeURL": "QRCodeURL",
+				"SpecialNotes": "SpecialNotes",
+				"VehicleName": "VehicleName",
+				"VehicleOwner": "VehicleOwner",
+				"VehiclePassportNumber": "VehiclePassportNumber",
+				"VehiclePassportSerial": "VehiclePassportSerial",
+				"VehiclePassportType": "VehiclePassportType",
+				"VehicleRegistrationNumber": "VehicleRegistrationNumber",
+				"VehicleVin": "VehicleVin",
+				"Power": "Power",
+				"PowerKvt": "PowerKvt",
+				"Agent": "Agent",
+				"IsLKUL": "IsLKUL",
+				"SalesChannel": "SalesChannel"
+			}
+		}
+	}

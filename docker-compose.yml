@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  rgsprintengine:
+    image: ${DOCKER_REGISTRY-}printengine
+    build:
+      context: .
+      dockerfile: PrintEngine/Dockerfile

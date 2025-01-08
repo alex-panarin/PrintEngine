@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PrintEngine</name>
+    </assembly>
+    <members>
+        <member name="T:PrintEngine.Controllers.MetadataController">
+            <summary>
+            Контроллер метаданных
+            </summary>
+        </member>
+        <member name="M:PrintEngine.Controllers.MetadataController.#ctor(PrintEngine.Core.Interfaces.IPrintComposer)">
+            <summary>
+            Конструктор
+            </summary>
+            <param name="composer"></param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:PrintEngine.Controllers.MetadataController.GetMapping(System.String)">
+            <summary>
+            Получаем метаданные для шаблона
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PrintEngine.Controllers.PingController">
+            <summary>
+            Контроллер состояния
+            </summary>
+        </member>
+        <member name="M:PrintEngine.Controllers.PingController.Get">
+            <summary>
+            Возвращает текущее время и версию ядра
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PrintEngine.Controllers.PrintEngineController">
+            <summary>
+            Класс контроллера печати
+            </summary>
+        </member>
+        <member name="M:PrintEngine.Controllers.PrintEngineController.#ctor(PrintEngine.Core.Interfaces.IPrintComposer,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Конструктор
+            </summary>
+            <param name="composer"></param>
+            <param name="loggerFactory"></param>
+            <param name="configuration"></param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:PrintEngine.Controllers.PrintEngineController.Engage(Newtonsoft.Json.Linq.JObject)">
+            <summary>
+            Возвращает печатную форму
+            </summary>
+            <remarks>
+            Пример запроса:
+            	
+            	POST /Engage
+            	{
+            		"TemplateId":"string (обязателен)",
+            		"MetadataId":"string (возможен)",
+            		"NeedSign":bool (возможен) если не указан, то false, 
+            		"CorrelationId":"string($uuid) (возможен) если не указан, формируется автоматически",
+            		"Data":{ модель входных данных } (обязателен)
+            	}	
+            	
+            </remarks>
+            <param name="inputObject">Json формата, описанного в примере выше</param>
+            <returns>Возвращает объект, содержащий печатную форму</returns>
+            <response code="400">Возвращает объект, содержащий описание ошибки</response>
+            <response code="200">Возвращает объект, содержащий печатную форму</response>
+        </member>
+        <member name="M:PrintEngine.Controllers.PrintEngineController.Templates">
+            <summary>
+            Список шаблонов для печати
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PrintEngine.Examples.EngageRequestExample">
+            <summary>
+            Образец запроса метода Engage
+            </summary>
+        </member>
+        <member name="M:PrintEngine.Examples.EngageRequestExample.GetExamples">
+            <summary>
+            GetExamples
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PrintEngine.Examples.EngageResponseExampleOk">
+            <summary>
+            Образец ответа метода Engage
+            </summary>
+        </member>
+        <member name="M:PrintEngine.Examples.EngageResponseExampleOk.GetExamples">
+            <summary>
+            GetExamples
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PrintEngine.Examples.EngageResponseExampleBadRequest">
+            <summary>
+            Образец ответа метода Engage
+            </summary>
+        </member>
+        <member name="M:PrintEngine.Examples.EngageResponseExampleBadRequest.GetExamples">
+            <summary>
+            GetExamples
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PrintEngine.Extentions.DocumentFilter">
+            <summary>
+            RemoveSchemasFilter
+            </summary>
+        </member>
+        <member name="M:PrintEngine.Extentions.DocumentFilter.Apply(Microsoft.OpenApi.Models.OpenApiDocument,Swashbuckle.AspNetCore.SwaggerGen.DocumentFilterContext)">
+            <summary>
+            Apply(OpenApiDocument swaggerDoc)
+            </summary>
+            <param name="swaggerDoc"></param>
+            <param name="context"></param>
+        </member>
+    </members>
+</doc>

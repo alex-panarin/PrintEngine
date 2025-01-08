@@ -1,0 +1,129 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Templates.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Templates.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\alexandrov.png" />
+    <None Remove="Resources\arial.ttf" />
+    <None Remove="Resources\arialbd.ttf" />
+    <None Remove="Resources\ariali.ttf" />
+    <None Remove="Resources\ariblk.ttf" />
+    <None Remove="Resources\bag.png" />
+    <None Remove="Resources\EOsago.png" />
+    <None Remove="Resources\evdokimova..png" />
+    <None Remove="Resources\flag.png" />
+    <None Remove="Resources\footer_logo.png" />
+    <None Remove="Resources\formula.png" />
+    <None Remove="Resources\frends.png" />
+    <None Remove="Resources\gunaev.png" />
+    <None Remove="Resources\house.png" />
+    <None Remove="Resources\lada_leasing.png" />
+    <None Remove="Resources\person.png" />
+    <None Remove="Resources\renault_leasing.jpg" />
+    <None Remove="Resources\rgs.png" />
+    <None Remove="Resources\rgs_new.png" />
+    <None Remove="Resources\rgs_old.png" />
+    <None Remove="Resources\RGS_RNL_logo.png" />
+    <None Remove="Resources\RGS_Stamp_old.png" />
+    <None Remove="Resources\RNL_Signature.png" />
+    <None Remove="Resources\RNL_Stamp.png" />
+    <None Remove="Resources\roslikov.png" />
+    <None Remove="Resources\shabanova.png" />
+    <None Remove="Resources\shabanova_old.png" />
+    <None Remove="Resources\Shepelev.png" />
+    <None Remove="Resources\shmelev.png" />
+    <None Remove="Resources\times.ttf" />
+    <None Remove="Resources\timesbd.ttf" />
+    <None Remove="Resources\timesi.ttf" />
+    <None Remove="Resources\webdings.ttf" />
+    <None Remove="Resources\wingding.ttf" />
+    <None Remove="Resources\ОСАГО_лого_DK.png" />
+    <None Remove="Resources\ОСАГО_шапка_DK.png" />
+    <None Remove="Resources\РГС_Основная_печать_Общества_%28без_фона%29 %281%29.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\alexandrov.png" />
+    <EmbeddedResource Include="Resources\arial.ttf" />
+    <EmbeddedResource Include="Resources\arialbd.ttf" />
+    <EmbeddedResource Include="Resources\ariali.ttf" />
+    <EmbeddedResource Include="Resources\ariblk.ttf" />
+    <EmbeddedResource Include="Resources\bag.png" />
+    <EmbeddedResource Include="Resources\EOsago.png" />
+    <EmbeddedResource Include="Resources\evdokimova..png" />
+    <EmbeddedResource Include="Resources\flag.png" />
+    <EmbeddedResource Include="Resources\footer_logo.png" />
+    <EmbeddedResource Include="Resources\formula.png" />
+    <EmbeddedResource Include="Resources\frends.png" />
+    <EmbeddedResource Include="Resources\gunaev.png" />
+    <EmbeddedResource Include="Resources\house.png" />
+    <EmbeddedResource Include="Resources\lada_leasing.png" />
+    <EmbeddedResource Include="Resources\person.png" />
+    <EmbeddedResource Include="Resources\renault_leasing.jpg" />
+    <EmbeddedResource Include="Resources\rgs.png" />
+    <EmbeddedResource Include="Resources\rgs_new.png" />
+    <EmbeddedResource Include="Resources\rgs_old.png" />
+    <EmbeddedResource Include="Resources\RGS_RNL_logo.png" />
+    <EmbeddedResource Include="Resources\RGS_Stamp_old.png" />
+    <EmbeddedResource Include="Resources\RNL_Signature.png" />
+    <EmbeddedResource Include="Resources\RNL_Stamp.png" />
+    <EmbeddedResource Include="Resources\roslikov.png" />
+    <EmbeddedResource Include="Resources\shabanova.png" />
+    <EmbeddedResource Include="Resources\Shepelev.png" />
+    <EmbeddedResource Include="Resources\shmelev.png" />
+    <EmbeddedResource Include="Resources\times.ttf" />
+    <EmbeddedResource Include="Resources\timesbd.ttf" />
+    <EmbeddedResource Include="Resources\timesi.ttf" />
+    <EmbeddedResource Include="Resources\webdings.ttf" />
+    <EmbeddedResource Include="Resources\wingding.ttf" />
+    <EmbeddedResource Include="Resources\ОСАГО_лого_DK.png" />
+    <EmbeddedResource Include="Resources\ОСАГО_шапка_DK.png" />
+    <EmbeddedResource Include="Resources\РГС_Основная_печать_Общества_(без_фона) (1).png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Fonts.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Fonts.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Images.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Images.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Metadatas.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Metadatas.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Fonts.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Fonts.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Images.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Images.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Metadatas.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Metadatas.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
